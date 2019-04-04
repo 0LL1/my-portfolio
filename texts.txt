@@ -29,7 +29,7 @@ demo
   - minors: aesthetics and art history
 - work experience in fields of culture and arts
 - found a passion for programming in 2017 and since been on this self learning path
-- After learning the basics, I've been focusing on modern front-end technologies
+- after learning the basics, I've been focusing on modern front-end technologies
 - I'm comfortable with:
   - JavaScript
     - ES6+
@@ -39,7 +39,7 @@ demo
   - CSS
     - responsive and adaptive design
     - layouts using grid and flexbox
-    -CSS-in-JS
+    - CSS-in-JS
 - I'm most interested in learning:
   - GraphQL
   - TypeScript

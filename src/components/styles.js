@@ -1,7 +1,4 @@
 import styled, { createGlobalStyle } from 'styled-components/macro'
-// import me from '../images/me.jpg'
-// import fBoard from '../images/f-board.jpg'
-// import myNewTab from '../images/my-new-tab.jpg'
 
 const colors = {
   light: '#ffffff',
@@ -70,10 +67,13 @@ export const LinkButton = styled.a`
   background-color: ${colors.highlight};
   color: ${colors.light};
   z-index: 1;
+  transition: all ease-in-out 175ms;
+  :hover {
+    transform: translateY(-5px);
+  }
 `
 
 export const Img = styled.img`
-  /* padding: 0 10rem; */
   width: 70%;
   grid-column: 1 / 5;
   grid-row: 1 / 5;
@@ -128,7 +128,6 @@ export const StyledHeader = styled.div`
 export const Works = styled.div`
   grid-column: 2 / 3;
   display: grid;
-  /* so that sticky title won't take space */
   grid-template-rows: 0 1fr 1fr;
 `
 
@@ -140,13 +139,35 @@ export const StyledProject = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  border-bottom: dotted 0.5rem ${colors.transparent};
+  :last-child {
+    border: none;
+  }
 `
 
 export const StyledAbout = styled.div`
   min-height: 100vh;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-left: 1rem;
   grid-column: 2 / 3;
   display: grid;
+  grid-template-rows: 0 1fr;
   background-color: ${colors.dark};
+  ul {
+    list-style: disc;
+  }
+  li {
+  }
+  p {
+    font-size: 2rem;
+    padding: 0rem 5rem 3rem 1rem;
+    color: ${colors.highlight};
+  }
+`
+
+export const List = styled.ul`
+  padding: 1rem 5rem 1rem 1rem;
 `
 
 export const Icons = styled.div`
