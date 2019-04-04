@@ -1,0 +1,53 @@
+#Olli Rautiainen
+
+Web development with love
+
+#Works
+
+##f-board
+
+Mobile friendly progressive web application for string instrumentalists. 
+Visualize your fingerboard with any tuning and note combination.
+
+code 
+demo
+
+##My new tab
+
+Chrome extension that overrides the default new tab page. 
+It contains four individual widgets for my daily needs.
+
+code 
+demo
+
+#About
+
+- born in 1988
+- live in Helsinki
+- Master of Arts from University of Helsinki 
+  - major: musicology 
+  - minors: aesthetics and art history
+- work experience in fields of culture and arts
+- found a passion for programming in 2017 and since been on this self learning path
+- After learning the basics, I've been focusing on modern front-end technologies
+- I'm comfortable with:
+  - JavaScript
+    - ES6+
+    - React
+    - create-react-app
+    - Gatsby
+  - CSS
+    - responsive and adaptive design
+    - layouts using grid and flexbox
+    -CSS-in-JS
+- I'm most interested in learning:
+  - GraphQL
+  - TypeScript
+  - testing
+  - Apollo
+  - Next
+- all in all, I like to keep myself up to date with current best practices, whatever they are
+- I nurture my mind and body with music, chess, bodyweight training, running, cycling, hiking, swimming etc.
+
+Most importantly: I'm looking for my first full-time position in the industry, 
+so contact me if you're interested!

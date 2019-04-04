@@ -1,8 +1,8 @@
 import React from 'react'
 import {
-  Icons,
   Title,
-  Link,
+  Img,
+  LinkButton,
   Description,
   StyledProject,
 } from '../components/styles'
@@ -10,16 +10,15 @@ import {
 const Project = ({ title, description, code, demo, image }) => {
   return (
     <StyledProject image={image}>
-      <Title style={{ marginTop: '2rem' }}>{title}</Title>
+      <Title>{title}</Title>
+      <Img src={require(`../images/${image}`)} />
       <Description>{description}</Description>
-      <Icons>
-        <Link href={code} target="_blank" rel="noopener noreferrer">
-          code
-        </Link>
-        <Link href={demo} target="_blank" rel="noopener noreferrer">
-          demo
-        </Link>
-      </Icons>
+      <LinkButton href={code} target="_blank" rel="noopener noreferrer">
+        code
+      </LinkButton>
+      <LinkButton href={demo} target="_blank" rel="noopener noreferrer">
+        demo
+      </LinkButton>
     </StyledProject>
   )
 }
