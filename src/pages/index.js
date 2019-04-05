@@ -3,10 +3,12 @@ import { GlobalStyle, Body, Works, StickyTitle } from '../components/styles'
 import Header from '../components/header'
 import Project from '../components/project'
 import About from '../components/about'
+import SEO from '../components/seo'
 
 export default () => {
   return (
     <Body>
+      <SEO />
       <GlobalStyle />
       <Header />
       <Works>
