@@ -39,7 +39,7 @@ const Header = () => {
         </Link>
         <Link
           href="mailto:o.a.h.rautiainen@gmail.com"
-          aria-label="Email me"
+          aria-label="Email"
           target="_blank"
           rel="noopener noreferrer"
         >
