@@ -4,11 +4,11 @@ const typography = new Typography({
   googleFonts: [
     {
       name: 'Playfair Display',
-      styles: ['400', '700', '900'],
+      styles: ['700'],
     },
     {
       name: 'Source Sans Pro',
-      styles: ['400', '700'],
+      styles: ['400'],
     },
   ],
   headerFontFamily: ['Playfair Display', 'serif'],

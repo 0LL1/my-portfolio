@@ -8,7 +8,7 @@ import SEO from '../components/seo'
 export default () => {
   return (
     <Body>
-      <SEO />
+      <SEO title="Olli" />
       <GlobalStyle />
       <Header />
       <Works>
