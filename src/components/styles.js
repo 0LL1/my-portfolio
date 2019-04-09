@@ -86,7 +86,7 @@ export const Description = styled.p`
   grid-row: 3 / 4;
   width: 20rem;
   padding: 1rem;
-  background-color: ${colors.transparent};
+  background-color: ${colors.dark};
   font-size: 1.5rem;
   z-index: 1;
 `

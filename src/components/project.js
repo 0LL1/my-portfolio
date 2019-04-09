@@ -11,7 +11,7 @@ const Project = ({ title, description, code, demo, image }) => {
   return (
     <StyledProject image={image}>
       <Title>{title}</Title>
-      <Img src={require(`../images/${image}`)} />
+      <Img src={require(`../images/${image}`)} alt={title} />
       <Description>{description}</Description>
       <LinkButton href={code} target="_blank" rel="noopener noreferrer">
         code

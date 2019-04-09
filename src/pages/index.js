@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { GlobalStyle, Body, Works, StickyTitle } from '../components/styles'
 import Header from '../components/header'
 import Project from '../components/project'
