@@ -7,6 +7,29 @@ const colors = {
   highlight: '#fc0fc0',
 }
 
+export const GlobalStyle = createGlobalStyle`
+      html {
+        background-color: ${colors.dark};
+        font-size: 16px;
+        overflow-x: hidden;
+      }
+      a {
+        text-decoration: none;
+      }
+    `
+
+export const Body = styled.div`
+  display: grid;
+  width: 100vw;
+  color: ${colors.light};
+  grid-template-columns: 38.2vw 61.8vw;
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+  }
+`
+
 export const Title = styled.h1`
   color: ${colors.highlight};
   font-size: 10rem;
@@ -89,28 +112,6 @@ export const Description = styled.p`
   background-color: ${colors.dark};
   font-size: 1.5rem;
   z-index: 1;
-`
-
-export const GlobalStyle = createGlobalStyle`
-  html {
-    background-color: ${colors.dark};
-    overflow-x: hidden;
-  }
-  a {
-    text-decoration: none;
-  }
-`
-
-export const Body = styled.div`
-  display: grid;
-  width: 100vw;
-  color: ${colors.light};
-  grid-template-columns: 38.2vw 61.8vw;
-
-  @media (max-width: 1000px) {
-    display: flex;
-    flex-direction: column;
-  }
 `
 
 export const StyledHeader = styled.div`

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Olli`,
+    title: `Olli Rautiainen`,
     author: `Olli Rautiainen`,
-    description: `Olli's portfolio`,
+    description: `Portfolio of Olli Rautiainen, a web developer`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,12 +18,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Olli's portfolio`,
-        short_name: `Olli`,
+        name: `Olli Rautiainen`,
+        short_name: `Olli R`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#000000`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/OR.png`,
       },
     },
