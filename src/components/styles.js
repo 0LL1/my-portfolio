@@ -1,4 +1,7 @@
-import styled, { createGlobalStyle } from 'styled-components/macro'
+import styled, { createGlobalStyle } from 'styled-components'
+import typography from '../utils/typography'
+
+const rhythm = typography.rhythm
 
 const colors = {
   light: '#ffffff',
@@ -52,7 +55,8 @@ export const Name = styled.h1`
 export const Phrase = styled.div`
   position: absolute;
   left: 0.5rem;
-  top: 1rem;
+  /* top: 1rem; */
+  top: ${rhythm(1)};
   font-size: 2rem;
   color: ${colors.highlight};
   line-height: 0;

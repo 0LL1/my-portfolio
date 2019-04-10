@@ -13,6 +13,9 @@ const typography = new Typography({
   ],
   headerFontFamily: ['Playfair Display', 'serif'],
   bodyFontFamily: ['Source Sans Pro', 'sans-serif'],
+  // Defaults:
+  // baseFontSize: '16px',
+  // baseLineHeight: 1.5,
 })
 
 export default typography
