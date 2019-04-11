@@ -3,12 +3,12 @@ import Typography from 'typography'
 const typography = new Typography({
   googleFonts: [
     {
-      name: 'Playfair Display',
+      name: 'Roboto',
       styles: ['400', '700'],
     },
   ],
-  headerFontFamily: ['Playfair Display', 'serif'],
-  bodyFontFamily: ['Playfair Display', 'serif'],
+  headerFontFamily: ['Roboto', 'sans-serif'],
+  bodyFontFamily: ['Roboto', 'sans-serif'],
   baseFontSize: '24px',
   baseLineHeight: 1.5,
   scaleRatio: 1.666,

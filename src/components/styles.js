@@ -4,10 +4,9 @@ import typography from '../utils/typography'
 const rhythm = typography.rhythm
 
 const colors = {
-  light: '#ffffff',
-  dark: '#111111',
-  transparent: 'rgba(127, 127, 127, 0.5)',
-  highlight: '#fc0fc0',
+  light: '#efefef',
+  dark: '#010101',
+  highlight: 'rgba(127, 127, 127, 0.9)',
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -19,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     color: inherit;
   }
   .icon {
-    vertical-align: -2px;
+    vertical-align: -4px;
   }
 `
 
