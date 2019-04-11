@@ -13,171 +13,120 @@ const colors = {
 export const GlobalStyle = createGlobalStyle`
       html {
         background-color: ${colors.dark};
-        font-size: 16px;
-        overflow-x: hidden;
       }
       a {
         text-decoration: none;
+        color: inherit;
       }
     `
 
 export const Body = styled.div`
-  display: grid;
-  width: 100vw;
-  color: ${colors.light};
-  grid-template-columns: 38.2vw 61.8vw;
+  background-color: ${colors.light};
+  background-size: ${rhythm(0.25)} ${rhythm(0.25)};
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+`
 
-  @media (max-width: 1000px) {
-    display: flex;
-    flex-direction: column;
+export const StyledHeader = styled.div``
+
+export const HeaderText = styled.div`
+  text-align: center;
+  margin: ${rhythm(1.5)} auto;
+  p {
+    line-height: ${rhythm(1)};
+    margin: ${rhythm(0.5)} auto;
+  }
+  h1 {
+    line-height: ${rhythm(1)};
+    margin: ${rhythm(0.5)} auto;
   }
 `
 
-export const Title = styled.h1`
-  color: ${colors.highlight};
-  font-size: 10rem;
+export const Bar = styled.div`
+  width: 100%;
+  height: ${rhythm(1)};
+  background-color: ${colors.dark};
+  color: ${colors.light};
+`
+
+export const IconBar = styled(Bar)`
+  display: flex;
+  // justify-content: flex-end;
+  padding: 0 ${rhythm(0.25)};
+`
+
+export const IconLink = styled.a`
+  width: ${rhythm(1)};
+  margin: 0 ${rhythm(0.25)};
   text-align: center;
-  margin: 0 0.5rem 0 0;
-  z-index: 1;
-  grid-column: 1 / -1;
-  grid-row: 1 / 3;
-`
-
-export const Name = styled.h1`
-  font-size: 20rem;
-  transform: rotate(-90deg);
-  transform-origin: right bottom;
-  position: absolute;
-  top: -20rem;
-  right: -2.8rem;
-`
-
-export const Phrase = styled.div`
-  position: absolute;
-  left: 0.5rem;
-  /* top: 1rem; */
-  top: ${rhythm(1)};
-  font-size: 2rem;
-  color: ${colors.highlight};
-  line-height: 0;
-`
-
-export const StickyTitle = styled.h1`
-  justify-self: end;
-  align-self: start;
-  color: ${props => (props.light ? colors.light : colors.dark)};
-  font-size: 5rem;
-  transform: rotate(-90deg);
-  transform-origin: right top;
-  position: sticky;
-  top: 1rem;
-  margin-right: 4.8rem;
-  margin-top: 1rem;
-  margin-bottom: 10rem;
-`
-
-export const Link = styled.a`
-  text-decoration: none;
-  font-size: 2rem;
-  margin: 0 0.5rem;
-  color: ${colors.transparent};
   :hover {
     color: ${colors.highlight};
   }
 `
 
-export const LinkButton = styled.a`
-  text-decoration: none;
-  text-align: center;
-  font-size: 2rem;
-  margin: 1rem;
-  background-color: ${colors.highlight};
-  color: ${colors.light};
-  z-index: 1;
-  transition: all ease-in-out 175ms;
-  :hover {
-    transform: translateY(-5px);
-  }
-`
-
-export const Img = styled.img`
-  width: 70%;
-  grid-column: 1 / 5;
-  grid-row: 1 / 5;
-  transform-origin: top right;
+export const ImageContainer = styled.div`
+  max-width: 800px;
   transform: rotate(-8deg);
+  margin: ${rhythm(1.5)} auto;
 `
 
-export const Description = styled.p`
-  grid-column: 1 / 5;
-  grid-row: 3 / 4;
-  width: 20rem;
-  padding: 1rem;
-  background-color: ${colors.dark};
-  font-size: 1.5rem;
-  z-index: 1;
-`
-
-export const StyledHeader = styled.div`
-  min-height: 100vh;
-  width: 38.2vw;
-  grid-column: 1 / 2;
-  background-color: ${colors.dark};
-  position: fixed;
-
-  @media (max-width: 1000px) {
-    position: static;
-  }
-`
-
-export const Works = styled.div`
-  grid-column: 2 / 3;
-  display: grid;
-  grid-template-rows: 0 1fr 1fr;
+export const TitleBar = styled(Bar)`
+  padding: 0 ${rhythm(0.5)};
 `
 
 export const StyledProject = styled.div`
-  height: 100vh;
-  width: 100%;
-  padding: 1rem;
-  background-color: ${colors.light};
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  border-bottom: dotted 0.5rem ${colors.transparent};
-  :last-child {
-    border: none;
+  // border-bottom: solid 1px ${colors.dark};
+  // :last-child {
+  //   border: none;
+  // }
+`
+
+export const ProjectText = styled(HeaderText)`
+  p {
+    text-align: left;
+    max-width: ${rhythm(10)};
+    margin: ${rhythm(1)} auto;
+  }
+`
+
+export const LinkButtons = styled.div`
+  margin: ${rhythm(1.5)} auto;
+  a {
+    padding: 0 ${rhythm(1)};
+    margin: 0 ${rhythm(0.5)};
+    background-color: ${colors.dark};
+    color: ${colors.light};
+    :hover {
+      background-color: ${colors.highlight};
+    }
   }
 `
 
 export const StyledAbout = styled.div`
-  min-height: 100vh;
-  font-size: 1.5rem;
-  line-height: 1;
-  margin-left: 1rem;
-  grid-column: 2 / 3;
-  display: grid;
-  grid-template-rows: 0 1fr;
-  background-color: ${colors.dark};
+  // min-height: 100vh;
+  // font-size: 1.5rem;
+  // line-height: 1;
+  // margin-left: 1rem;
+  // grid-column: 2 / 3;
+  // display: grid;
+  // grid-template-rows: 0 1fr;
+  // background-color: ${colors.dark};
   ul {
     list-style: disc;
   }
-  li {
-  }
-  p {
-    font-size: 2rem;
-    padding: 0rem 5rem 3rem 1rem;
-    color: ${colors.highlight};
-  }
+  // li {
+  // }
+  // p {
+  //   font-size: 2rem;
+  //   padding: 0rem 5rem 3rem 1rem;
+  //   color: ${colors.highlight};
+  // }
 `
 
 export const List = styled.ul`
-  padding: 1rem 5rem 1rem 1rem;
-`
-
-export const Icons = styled.div`
-  display: flex;
-  position: fixed;
-  bottom: 0rem;
-  left: 0rem;
+  // padding: 1rem 5rem 1rem 1rem;
 `

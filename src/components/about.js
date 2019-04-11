@@ -1,10 +1,9 @@
 import React from 'react'
-import { StyledAbout, StickyTitle, List } from '../components/styles'
+import { StyledAbout, List } from '../components/styles'
 
 const About = () => {
   return (
     <StyledAbout>
-      <StickyTitle light>About</StickyTitle>
       <List>
         <li>born in 1988</li>
         <li>live in Helsinki</li>

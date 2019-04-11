@@ -1,51 +1,16 @@
 import React from 'react'
-import { FaGithub, FaLinkedin, FaTwitter, FaRegEnvelope } from 'react-icons/fa'
-import { StyledHeader, Icons, Name, Phrase, Link } from '../components/styles'
+import { StyledHeader, HeaderText, ImageContainer } from '../components/styles'
 
-const Header = () => {
+const Header = ({ image }) => {
   return (
     <StyledHeader>
-      <Name>Olli</Name>
-      <Phrase>
-        <p>web</p>
-        <p>development</p>
-        <p>with</p>
-        <p>passion</p>
-      </Phrase>
-      <Icons>
-        <Link
-          href="https://github.com/0LL1"
-          aria-label="GitHub"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </Link>
-        <Link
-          href="https://www.linkedin.com/in/olli-rautiainen-8a662111b/"
-          aria-label="LinkedIn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </Link>
-        <Link
-          href="https://twitter.com/__0LL1__"
-          aria-label="Twitter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTwitter />
-        </Link>
-        <Link
-          href="mailto:o.a.h.rautiainen@gmail.com"
-          aria-label="Email"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaRegEnvelope />
-        </Link>
-      </Icons>
+      <HeaderText>
+        <p>Hi, I'm</p>
+        <h1>Olli Rautiainen</h1>
+        <p>and I love</p>
+        <h1>web development</h1>
+      </HeaderText>
+      <ImageContainer>{image}</ImageContainer>
     </StyledHeader>
   )
 }
