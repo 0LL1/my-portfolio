@@ -51,3 +51,14 @@ demo
 
 Most importantly: I'm looking for my first full-time position in the industry, 
 so contact me if you're interested!
+
+
+I was born in 1988 and I live in Helsinki. I'm Master of Arts from University of Helsinki, where I majored in musicology and minored in aesthetics and art history. I have work experience from fields of culture and arts.
+
+I found my passion for programming in 2017 and have since been on this never-ending self-learning path. After learning the basics, I've been focusing on modern front-end technologies. I'm comfortable with JavaScript related stuff like ES6+, React, Gatsby and create-react-app. CSS-wise I can do responsive and adaptive design, layouts using grid and flexbox, CSS-in-JS and other essential things.
+
+Right now I'm most interested in learning tech like GraphQL, TypeScript, Apollo, Next and proper testing – and obviously mastering JS and CSS. All in all, I like to keep myself up to date with current best practices, whatever they are.
+
+Besides programming, I enjoy making music, playing casual blitz chess and doing various physical activities like bodyweight training, running, cycling, hiking and swimming. 
+
+Most importantly: I'm looking for my first full-time position in the industry, so contact me if you're interested!

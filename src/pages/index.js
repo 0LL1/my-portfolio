@@ -26,7 +26,7 @@ export default ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub />
+          <FaGithub className="icon" />
         </IconLink>
         <IconLink
           href="https://www.linkedin.com/in/olli-rautiainen-8a662111b/"
@@ -34,7 +34,7 @@ export default ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin />
+          <FaLinkedin className="icon" />
         </IconLink>
         <IconLink
           href="https://twitter.com/__0LL1__"
@@ -42,7 +42,7 @@ export default ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaTwitter />
+          <FaTwitter className="icon" />
         </IconLink>
         <IconLink
           href="mailto:o.a.h.rautiainen@gmail.com"
@@ -50,13 +50,13 @@ export default ({ data }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaRegEnvelope />
+          <FaRegEnvelope className="icon" />
         </IconLink>
       </IconBar>
       <Header
         image={
           <Img
-            fluid={data.fBoard.childImageSharp.fluid}
+            fluid={data.profilePicture.childImageSharp.fluid}
             style={{ borderRadius: '50%' }}
           />
         }
@@ -104,10 +104,13 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
   query {
-    fBoard: file(relativePath: { eq: "f-board.jpg" }) {
+    profilePicture: file(relativePath: { eq: "profile-picture.png" }) {
       ...fluidImage
     }
-    myNewTab: file(relativePath: { eq: "my-new-tab.jpg" }) {
+    fBoard: file(relativePath: { eq: "f-board.png" }) {
+      ...fluidImage
+    }
+    myNewTab: file(relativePath: { eq: "my-new-tab.png" }) {
       ...fluidImage
     }
   }

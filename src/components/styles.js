@@ -5,24 +5,30 @@ const rhythm = typography.rhythm
 
 const colors = {
   light: '#ffffff',
-  dark: '#000000',
+  dark: '#111111',
   transparent: 'rgba(127, 127, 127, 0.5)',
   highlight: '#fc0fc0',
 }
 
 export const GlobalStyle = createGlobalStyle`
-      html {
-        background-color: ${colors.dark};
-      }
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-    `
+  html {
+    background-color: ${colors.dark};
+  }
+  a {
+   text-decoration: none;
+    color: inherit;
+  }
+  .icon {
+    vertical-align: -2px;
+  }
+`
 
 export const Body = styled.div`
+  max-width: ${rhythm(22)};
+  margin: 0 auto;
+  padding: ${rhythm(0.5)};
   background-color: ${colors.light};
-  background-size: ${rhythm(0.25)} ${rhythm(0.25)};
+  background-size: ${rhythm(0.5)} ${rhythm(0.5)};
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.1) 1px,
@@ -55,7 +61,6 @@ export const Bar = styled.div`
 
 export const IconBar = styled(Bar)`
   display: flex;
-  // justify-content: flex-end;
   padding: 0 ${rhythm(0.25)};
 `
 
@@ -96,35 +101,21 @@ export const ProjectText = styled(HeaderText)`
 export const LinkButtons = styled.div`
   margin: ${rhythm(1.5)} auto;
   a {
-    padding: 0 ${rhythm(1)};
+    // padding: 0 ${rhythm(1)};
     margin: 0 ${rhythm(0.5)};
-    background-color: ${colors.dark};
-    color: ${colors.light};
+    text-decoration: underline;
+    color: ${colors.dark};
     :hover {
-      background-color: ${colors.highlight};
+      color: ${colors.highlight};
     }
   }
 `
 
 export const StyledAbout = styled.div`
-  // min-height: 100vh;
-  // font-size: 1.5rem;
-  // line-height: 1;
-  // margin-left: 1rem;
-  // grid-column: 2 / 3;
-  // display: grid;
-  // grid-template-rows: 0 1fr;
-  // background-color: ${colors.dark};
-  ul {
-    list-style: disc;
+  margin: ${rhythm(1.5)} auto 0 auto;
+  h3 {
+    line-height: ${rhythm(1)};
   }
-  // li {
-  // }
-  // p {
-  //   font-size: 2rem;
-  //   padding: 0rem 5rem 3rem 1rem;
-  //   color: ${colors.highlight};
-  // }
 `
 
 export const List = styled.ul`
