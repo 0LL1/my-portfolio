@@ -83,12 +83,7 @@ export const TitleBar = styled(Bar)`
   padding: 0 ${rhythm(0.5)};
 `
 
-export const StyledProject = styled.div`
-  // border-bottom: solid 1px ${colors.dark};
-  // :last-child {
-  //   border: none;
-  // }
-`
+export const StyledProject = styled.div``
 
 export const ProjectText = styled(HeaderText)`
   p {
@@ -116,8 +111,4 @@ export const StyledAbout = styled.div`
   h3 {
     line-height: ${rhythm(1)};
   }
-`
-
-export const List = styled.ul`
-  // padding: 1rem 5rem 1rem 1rem;
 `

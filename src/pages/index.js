@@ -1,14 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import { FaGithub, FaLinkedin, FaTwitter, FaRegEnvelope } from 'react-icons/fa'
-import {
-  GlobalStyle,
-  Body,
-  IconBar,
-  IconLink,
-  TitleBar,
-} from '../components/styles'
+import { GlobalStyle, Body, TitleBar } from '../components/styles'
+import Contact from '../components/contact'
 import Header from '../components/header'
 import Project from '../components/project'
 import About from '../components/about'
@@ -19,40 +13,7 @@ export default ({ data }) => {
     <Body>
       <SEO title="Olli Rautiainen" />
       <GlobalStyle />
-      <IconBar>
-        <IconLink
-          href="https://github.com/0LL1"
-          aria-label="GitHub"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub className="icon" />
-        </IconLink>
-        <IconLink
-          href="https://www.linkedin.com/in/olli-rautiainen-8a662111b/"
-          aria-label="LinkedIn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin className="icon" />
-        </IconLink>
-        <IconLink
-          href="https://twitter.com/__0LL1__"
-          aria-label="Twitter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTwitter className="icon" />
-        </IconLink>
-        <IconLink
-          href="mailto:o.a.h.rautiainen@gmail.com"
-          aria-label="Email"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaRegEnvelope className="icon" />
-        </IconLink>
-      </IconBar>
+      <Contact />
       <Header
         image={
           <Img
@@ -88,6 +49,7 @@ export default ({ data }) => {
       />
       <TitleBar>about</TitleBar>
       <About />
+      <Contact />
     </Body>
   )
 }
