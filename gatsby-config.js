@@ -21,8 +21,8 @@ module.exports = {
         name: `Olli Rautiainen`,
         short_name: `Olli R`,
         start_url: `/`,
-        background_color: `#000000`,
-        theme_color: `#000000`,
+        background_color: `#010101`,
+        theme_color: `#010101`,
         display: `standalone`,
         icon: `src/images/OR.png`,
       },
@@ -34,8 +34,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     'gatsby-plugin-offline',
   ],
 }
