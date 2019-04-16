@@ -11,7 +11,20 @@ import SEO from '../components/seo'
 export default ({ data }) => {
   return (
     <Body>
-      <SEO title="Olli Rautiainen" />
+      <SEO
+        title="Olli Rautiainen"
+        keywords={[
+          'portfolio',
+          'web developer',
+          'web development',
+          'front-end',
+          'javascript',
+          'react',
+          'helsinki',
+          'suomi',
+          'finland',
+        ]}
+      />
       <GlobalStyle />
       <Contact />
       <Header
