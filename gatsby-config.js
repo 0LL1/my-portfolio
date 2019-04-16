@@ -35,5 +35,13 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `UA-138442169-1`,
+        head: false,
+        anonymize: true,
+      },
+    },
   ],
 }
