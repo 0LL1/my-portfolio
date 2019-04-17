@@ -12,6 +12,23 @@ const colors = {
 export const GlobalStyle = createGlobalStyle`
   html {
     background-color: ${colors.dark};
+    font-size: 22px;
+    
+    @media (max-width: 393px) {
+      font-size: 21px;
+    }
+    @media (max-width: 375px) {
+      font-size: 20px;
+    }
+    @media (max-width: 357px) {
+      font-size: 19px;
+    }
+    @media (max-width: 340px) {
+      font-size: 18px;
+    }
+    @media (max-width: 322px) {
+      font-size: 17px;
+    }
   }
   a {
    text-decoration: none;
