@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaGithub, FaLink } from 'react-icons/fa'
 import { ProjectText, ImageContainer, LinkButtons } from '../components/styles'
 
 const Project = ({ title, description, code, demo, image }) => {
@@ -10,10 +11,10 @@ const Project = ({ title, description, code, demo, image }) => {
         <p>{description}</p>
         <LinkButtons>
           <a href={code} target="_blank" rel="noopener noreferrer">
-            code
+            <FaGithub className="icon" /> code
           </a>
           <a href={demo} target="_blank" rel="noopener noreferrer">
-            demo
+            <FaLink className="icon" /> demo
           </a>
         </LinkButtons>
       </ProjectText>

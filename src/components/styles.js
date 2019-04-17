@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     color: inherit;
   }
   .icon {
-    vertical-align: -4px;
+    vertical-align: -3px;
   }
 `
 
@@ -92,10 +92,9 @@ export const ProjectText = styled(HeaderText)`
 `
 
 export const LinkButtons = styled.div`
-  margin: ${rhythm(1.5)} auto;
+  margin: ${rhythm(1)} auto ${rhythm(1.5)} auto;
   a {
     margin: 0 ${rhythm(0.5)};
-    text-decoration: underline;
     font-weight: 700;
     color: ${colors.dark};
     @media (hover: hover) {
