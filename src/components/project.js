@@ -1,14 +1,9 @@
 import React from 'react'
-import {
-  ProjectText,
-  ImageContainer,
-  LinkButtons,
-  StyledProject,
-} from '../components/styles'
+import { ProjectText, ImageContainer, LinkButtons } from '../components/styles'
 
 const Project = ({ title, description, code, demo, image }) => {
   return (
-    <StyledProject>
+    <>
       <ImageContainer>{image}</ImageContainer>
       <ProjectText>
         <h1>{title}</h1>
@@ -22,7 +17,7 @@ const Project = ({ title, description, code, demo, image }) => {
           </a>
         </LinkButtons>
       </ProjectText>
-    </StyledProject>
+    </>
   )
 }
 
