@@ -14,13 +14,14 @@ const About = () => {
         I found my passion for programming in 2017 and have since been on this
         never-ending self-learning path. After learning the basics, I've been
         focusing on modern front-end technologies. I'm comfortable with
-        JavaScript related stuff like ES6+, React, Gatsby and create-react-app.
-        CSS-wise I can do responsive and adaptive design, layouts using grid and
-        flexbox, CSS-in-JS and other essential things.
+        JavaScript related stuff like ES6+, React (including the new Hooks API),
+        Gatsby and create-react-app. CSS-wise I can do responsive and adaptive
+        design, layouts using grid and flexbox, CSS-in-JS and other essential
+        things.
       </p>
       <p>
         Right now I'm most interested in learning tech like GraphQL, TypeScript,
-        Apollo, Next and proper testing – and obviously mastering JS and CSS.
+        Apollo, Next and automated testing – and obviously mastering JS and CSS.
         All in all, I like to keep myself up to date with current best
         practices, whatever they are.
       </p>
@@ -30,8 +31,8 @@ const About = () => {
         cycling, hiking and swimming.
       </p>
       <h3>
-        Most importantly: I'm looking for my first full-time position in the
-        industry, so contact me if you're interested!
+        Most importantly: I'm looking for a full-time position in the industry,
+        so contact me if you're interested!
       </h3>
     </StyledAbout>
   )
