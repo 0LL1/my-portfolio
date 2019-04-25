@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     color: inherit;
   }
   .icon {
-    vertical-align: -3px;
+    vertical-align: -4px;
   }
 `
 

@@ -31,7 +31,7 @@ export default ({ data }) => {
         image={
           <Img
             fluid={data.profilePicture.childImageSharp.fluid}
-            style={{ borderRadius: '50%' }}
+            alt="picture of me"
           />
         }
       />
@@ -44,7 +44,7 @@ export default ({ data }) => {
         image={
           <Img
             fluid={data.fBoard.childImageSharp.fluid}
-            style={{ borderRadius: '50%' }}
+            alt="picture of f-board"
           />
         }
       />
@@ -56,7 +56,7 @@ export default ({ data }) => {
         image={
           <Img
             fluid={data.myNewTab.childImageSharp.fluid}
-            style={{ borderRadius: '50%' }}
+            alt="picture of My new tab"
           />
         }
       />
@@ -71,7 +71,7 @@ export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
       fluid(maxWidth: 821) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_noBase64
       }
     }
   }
