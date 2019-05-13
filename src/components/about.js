@@ -17,7 +17,8 @@ const About = () => {
         JavaScript related stuff like ES6+, React (including the new Hooks API),
         Gatsby and create-react-app. CSS-wise I can do responsive and adaptive
         design, layouts using grid and flexbox, CSS-in-JS and other essential
-        things.
+        things. I've also done basic back-ends with Node and Express, and I'm
+        definitely curious learning more.
       </p>
       <p>
         Right now I'm most interested in learning tech like GraphQL, TypeScript,

@@ -14,7 +14,7 @@ const Contact = () => {
         <FaGithub className="icon" />
       </IconLink>
       <IconLink
-        href="https://www.linkedin.com/in/olli-rautiainen-8a662111b/"
+        href="https://www.linkedin.com/in/olli-dev/"
         aria-label="LinkedIn"
         target="_blank"
         rel="noopener noreferrer"
