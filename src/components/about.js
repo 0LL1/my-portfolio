@@ -17,8 +17,8 @@ const About = () => {
         JavaScript related stuff like ES6+, React (including the new Hooks API),
         Gatsby and create-react-app. CSS-wise I can do responsive and adaptive
         design, layouts using grid and flexbox, CSS-in-JS and other essential
-        things. I've also done basic back-ends with Node and Express, and I'm
-        definitely curious learning more.
+        things. I've also done basic back-ends with Node, Express and MongoDB,
+        and I'm definitely curious learning more.
       </p>
       <p>
         Right now I'm most interested in learning tech like GraphQL, TypeScript,
@@ -28,8 +28,8 @@ const About = () => {
       </p>
       <p>
         Besides programming, I enjoy making music, playing casual blitz chess
-        and doing various physical activities like bodyweight training, running,
-        cycling, hiking and swimming.
+        and doing various physical activities like bodyweight training, cycling,
+        running and hiking.
       </p>
       <h3>
         Most importantly: I'm looking for a full-time position in the industry,
